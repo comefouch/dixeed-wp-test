@@ -5,7 +5,7 @@
 - Sont dans le repo :
   - Un thème, dans le dossier themes
   - Deux plugins, dans le dossier plugins
-  - La base de données, dans le dossier sql
+  - La base de données, dans le dossier sql (les tables sont préfixées par "dixeed_wp")
 - Instance locale sur "https://dixeed-wp.test"
 - Plugins installés :
   - Woocommerce
