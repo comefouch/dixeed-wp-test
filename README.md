@@ -53,7 +53,7 @@
 ### Niveau expert
 
 - Créer une page avec un formulaire permettant d’ajouter des informations à l'utilisateur courant
-- Fait dans le plugin Dixeed Add Ananas User Info Page
+  - Fait dans le plugin Dixeed Add Ananas User Info Page
   - URL : /informations-sur-les-ananas
   - Remarques :
     - il serait sans doute pertinent de laisser les administrateurs modifier les textes depuis le Back Office, ce que je n'ai pas fait à ce jour
