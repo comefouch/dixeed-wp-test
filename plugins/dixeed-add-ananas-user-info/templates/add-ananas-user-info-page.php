@@ -18,6 +18,7 @@ get_header(); ?>
                 <h1><?php esc_html(the_title()); ?></h1>
                 <form action='<?php echo esc_url(admin_url('admin-post.php')); ?>' method='POST'>
                     <input type='hidden' name='action' value='handle_ananas_form_submission'/>
+                    <?php wp_nonce_field('update-ananas-preference'); ?>
                     <div>
                         <p>Aimez-vous l'ananas&nbsp;?</p>
                         <input type='radio' id='ananas-preference-yes' name='ananas-preference' value='yes'
@@ -37,11 +38,11 @@ get_header(); ?>
                     <input type='submit' name='submit' value='Valider'/>
                 </form>
             <?php } else {
-                $args = array(
+                            $args = array(
                     'message' => '<h3 class="login-woo">Se connecter</h3>'
                 );
-                woocommerce_login_form($args);
-            }
+                            woocommerce_login_form($args);
+                        }
             ?>
 		</main>
 	</div>

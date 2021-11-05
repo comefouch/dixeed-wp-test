@@ -64,4 +64,3 @@
 
 - Je n'ai pas du tout fait attention à la possibilité de traduction du site, jugeant que l'exercice ne le demandait pas, notamment à cause de l'instruction "Limiter la vente de produit en France seulement"
 - J'ai choisi de laisser toutes les fonctions du thème Storefront Dixeed Custom dans le même fichier functions.php, car il reste assez court. Une séparation en plusieurs fichiers serait peut-être souhaitable.
-- J'ai omis quelques précautions de sécurité (nonce dans les formulaires notamment, mais je corrigerai sans doute ça avant de vous transmettre le repo)

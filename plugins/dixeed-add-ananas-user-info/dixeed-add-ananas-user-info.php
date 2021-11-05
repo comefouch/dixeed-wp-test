@@ -42,6 +42,11 @@ function wpa3396_page_template($page_template)
 add_action('admin_post_handle_ananas_form_submission', 'handle_ananas_form_submission');
 function handle_ananas_form_submission()
 {
+    if (! isset($_POST['_wpnonce']) || ! wp_verify_nonce($_POST['_wpnonce'], 'update-ananas-preference')
+    ) {
+        wp_redirect($_SERVER["HTTP_REFERER"], 302, 'WordPress');
+        exit;
+    }
     $user_id = get_current_user_id();
     $ananas_preference = ($_POST['ananas-preference'] == 'yes');
     $ananas_preference_reason = sanitize_text_field($_POST['ananas-preference-reason']);
