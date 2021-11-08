@@ -8,12 +8,6 @@
 
 function add_ananas_user_info_page()
 {
-    // wc_get_template(
-    //     'add-ananas-user-info-page.php',
-    //     array(
-    //         'current_user' => get_user_by('id', get_current_user_id()),
-    //     )
-    // );
     $title = 'Informations sur les ananas';
     if (get_page_by_title($title) == null) {
         $add_user_info_page = array(
