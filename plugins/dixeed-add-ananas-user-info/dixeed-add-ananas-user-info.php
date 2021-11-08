@@ -23,8 +23,8 @@ function add_ananas_user_info_page()
 
 register_activation_hook(__FILE__, 'add_ananas_user_info_page');
 
-add_filter('page_template', 'wpa3396_page_template');
-function wpa3396_page_template($page_template)
+add_filter('page_template', 'add_ananas_user_info_page_template');
+function add_ananas_user_info_page_template($page_template)
 {
     if (is_page('informations-sur-les-ananas')) {
         $page_template = dirname(__FILE__) . '/templates/add-ananas-user-info-page.php';
